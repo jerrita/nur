@@ -1,4 +1,4 @@
-{ stdenv, pkgs, lib }:
+{ stdenv, pkgs, lib, ... }:
 pkgs.linux_6_10.override {
   argsOverride = {
     extraMeta = {
