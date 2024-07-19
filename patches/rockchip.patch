@@ -1,5 +1,8 @@
---- /dev/null	2024-07-16 08:03:02.460642371 +0000
-+++ arch/arm64/configs/rockchip_linux_defconfig	2024-07-19 05:53:36.788729393 +0000
+diff --git a/arch/arm64/configs/rockchip_linux_defconfig b/arch/arm64/configs/rockchip_linux_defconfig
+new file mode 100644
+index 000000000..a84de1891
+--- /dev/null
++++ b/arch/arm64/configs/rockchip_linux_defconfig
 @@ -0,0 +1,643 @@
 +CONFIG_WERROR=y
 +CONFIG_DEFAULT_HOSTNAME="localhost"
