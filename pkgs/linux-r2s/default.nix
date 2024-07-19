@@ -4,10 +4,16 @@ pkgs.linux_6_10.override {
     extraMeta = {
       broken = !stdenv.isAarch64;
     };
+
+    defconfig = "rockchip_linux_defconfig";
     kernelPatches = [
       {
         name = "enable-bbr3";
         patch = ../../patches/bbr3.patch;
+      }
+      {
+        name = "rockchip-defconfig";
+        patch = ../../patches/rockchip.patch;
       }
       {
         name = "hack";
